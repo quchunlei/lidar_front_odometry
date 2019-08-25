@@ -1,0 +1,9 @@
+<launch>
+    
+    <!--- Sim Time -->
+    <param name="/use_sim_time" value="true" />
+
+    <node pkg="imls_odom" type="imlsMatcher_node"    name="imlsMatcher_node"    output="screen"/>
+    <node pkg="rviz" type="rviz"   name="rviz_node"    args="-d $(find imls_odom)/launch/imls.rviz"/>
+
+</launch>
